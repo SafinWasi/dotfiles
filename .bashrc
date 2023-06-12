@@ -37,4 +37,11 @@ alias config='/sbin/git --git-dir=/home/safinwasi/.cfg/ --work-tree=/home/safinw
 export QT_QPA_PLATFORM=wayland
 
 # Nvim
-alias nv='nvim'
+alias vim='nvim'
+
+#GTK
+export GTK_USE_PORTAL=0
+
+# Git Aliases
+alias gd='git branch -d'
+alias gb='git checkout -b'

@@ -4,6 +4,10 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+# Startup scripts
+exec ~/.config/sway/scripts/startup.sh
+
+exec systemctl --user import-environment
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -265,7 +269,6 @@ bindsym $mod+r mode "resize"
 bar swaybar_command waybar
 
 
-include /etc/sway/config.d/*
 
 
 # Input
@@ -299,11 +302,12 @@ bindsym Print exec grim -g "$(slurp)" - | wl-copy
 bindsym $mod+Print exec grim -g "$(slurp)" /home/safinwasi/Pictures/screenshot.png
 
 
-# Screen sharing
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 # Dunst
 exec /usr/bin/dunst
 
 # XDG Desktop Portal
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+for_window [shell=".*"] title_format "%title :: %shell"
+
+include /etc/sway/config.d/*
