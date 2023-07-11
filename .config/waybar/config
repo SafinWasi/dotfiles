@@ -5,26 +5,40 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["clock", "network", "cpu", "memory", "temperature", "pulseaudio", "backlight", "keyboard-state", "tray"],
+    "modules-left": [
+        "wlr/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "clock",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "pulseaudio",
+        "backlight",
+        "keyboard-state",
+        "tray"
+    ],
     // Modules configuration
     "wlr/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "format": "{name}: {icon}",
-	 "on-click": "activate",
-         "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
-         }
-     },
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}: {icon}",
+        "on-click": "activate",
+        "format-icons": {
+            //         "1": "",
+            //         "2": "",
+            //         "3": "",
+            //         "4": "",
+            //         "5": "",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -89,12 +103,26 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
     },
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -120,9 +148,12 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [
+                "",
+                "",
+                ""
+            ]
         },
         "on-click": "pavucontrol"
     },
 }
-
