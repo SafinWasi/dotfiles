@@ -4,6 +4,10 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
     "modules-left": [
         "wlr/workspaces"
     ],
@@ -25,7 +29,7 @@
     "wlr/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
-        "format": "{name}: {icon}",
+        "format": "{name}",
         "on-click": "activate",
         "format-icons": {
             //         "1": "",
@@ -34,8 +38,8 @@
             //         "4": "",
             //         "5": "",
             "urgent": "",
-            "active": "",
-            "default": ""
+            "active": "",
+            "default": ""
         }
     },
     "keyboard-state": {
@@ -87,7 +91,7 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d-%m-%Y}"
     },
     "cpu": {
         "format": "{usage}% ",
