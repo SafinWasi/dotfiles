@@ -39,9 +39,10 @@ export QT_QPA_PLATFORM=wayland
 # Nvim
 alias vim='nvim'
 
-#GTK
-export GTK_USE_PORTAL=0
-
 # Git Aliases
 alias gd='git branch -d'
 alias gb='git checkout -b'
+
+export EDITOR='nvim'
+export OPENER='rifle'
+export JETTY_HOME='/home/safinwasi/coding/java/jetty-home-11.0.15'
