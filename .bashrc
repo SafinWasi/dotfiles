@@ -29,8 +29,16 @@ PERL_LOCAL_LIB_ROOT="/home/safinwasi/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_L
 PERL_MB_OPT="--install_base \"/home/safinwasi/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/safinwasi/perl5"; export PERL_MM_OPT;
 
+
 eval "$(pyenv init -)"
 
 export MOZ_ENABLE_WAYLAND=1
 export XDG_CURRENT_DESKTOP=sway
 alias config='/sbin/git --git-dir=/home/safinwasi/.cfg/ --work-tree=/home/safinwasi'
+export GPG_TTY=$(tty)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/safinwasi/Gluu/google-cloud-sdk/path.bash.inc' ]; then . '/home/safinwasi/Gluu/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/safinwasi/Gluu/google-cloud-sdk/completion.bash.inc' ]; then . '/home/safinwasi/Gluu/google-cloud-sdk/completion.bash.inc'; fi
