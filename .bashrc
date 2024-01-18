@@ -30,6 +30,9 @@ export WINEPREFIX=~/win64
 export GOPATH="/home/safinwasi/go"
 export PATH=$PATH:$GOPATH/bin
 
+# Android
+export PATH=$PATH:"/home/safinwasi/coding/apks/android-UpsideDownCake"
+
 # Git config for bare files
 alias config='/sbin/git --git-dir=/home/safinwasi/.cfg/ --work-tree=/home/safinwasi'
 
@@ -46,3 +49,4 @@ alias gb='git checkout -b'
 export EDITOR='nvim'
 export OPENER='rifle'
 export JETTY_HOME='/home/safinwasi/coding/java/jetty-home-11.0.15'
+export VAGRANT_HOME='/home/safinwasi/storage/safinwasi/.vagrant/'
