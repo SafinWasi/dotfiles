@@ -30,6 +30,9 @@ export WINEPREFIX=~/win64
 export GOPATH="/home/safinwasi/go"
 export PATH=$PATH:$GOPATH/bin
 
+# Rust
+export PATH="/home/safinwasi/.cargo/bin:$PATH"
+
 # Android
 export PATH=$PATH:"/home/safinwasi/coding/apks/android-UpsideDownCake"
 
@@ -45,6 +48,7 @@ alias vim='nvim'
 # Git Aliases
 alias gd='git branch -d'
 alias gb='git checkout -b'
+alias gl='git branch'
 
 export EDITOR='nvim'
 export OPENER='rifle'

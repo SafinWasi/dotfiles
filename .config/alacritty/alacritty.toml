@@ -1,4 +1,3 @@
-import = ["/home/safinwasi/.config/alacritty/themes/themes/gruvbox_dark.toml"]
 
 [font]
 size = 15.0
@@ -21,3 +20,6 @@ style = "Regular"
 
 [window]
 opacity = 0.85
+
+[general]
+import = ["/home/safinwasi/.config/alacritty/themes/themes/gruvbox_dark.toml"]
